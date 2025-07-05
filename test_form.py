@@ -20,9 +20,9 @@ VALID_DATA = {
 
 @pytest.fixture
 def form_page(page: Page) -> Page:
-    # page.goto("https://qa-practice.netlify.app/bugs-form")
+    page.goto("https://qa-practice.netlify.app/bugs-form")
     # correct HTML
-    page.goto(f"file://{Path(__name__).parent.resolve()}/form/index.html")
+    # page.goto(f"file://{Path(__name__).parent.resolve()}/form/index.html")
     return page
 
 
